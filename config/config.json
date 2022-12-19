@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "xxx",
-    "database": "eat_me",
+    "database": "xxx",
     "host": "xxx",
     "dialect": "mysql"
     
