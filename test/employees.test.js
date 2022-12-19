@@ -7,12 +7,23 @@ const empController = require('../controllers/employees.controller');
 chai.use(chaiHttp);
 
 
-describe('GET /api', async () => {
-    // get create
-    it('should get OK in create order', (done) => {
+describe('POST /api', async () => {
+    // create
+    it('should get OK in create employee', (done) => {
         chai.request(server).post('/save');
         it('should success', async () => {
             const result = await empController.saveEmployee;
+            expect(result.statusCode).to.equal(200);
+        });
+        done();
+    });
+});
+describe('GET /api', async () => {
+    // get 
+    it('should get OK in read', (done) => {
+        chai.request(server).post('/save');
+        it('should success', async () => {
+            const result = await empController.getEmployees;
             expect(result.statusCode).to.equal(200);
         });
         done();
