@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": "3MWl5ILK2q0ovicwBnwa",
+    "password": "xxx",
     "database": "eat_me",
-    "host": "eatmeqadevrds.ca9wmidyatzz.ap-south-1.rds.amazonaws.com",
+    "host": "xxx",
     "dialect": "mysql"
     
   },
