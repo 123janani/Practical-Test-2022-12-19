@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "cea3ff8e-10eb-4847-8496-04a568473f0a",
+		"name": "Eyepax",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save Employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Test Employee\",\n    \"email\": \"janani@gmail.com\",\n    \"profile_picture\": \"https://play.google.com/store/apps/details?id=com.google.android.apps.photos&hl=en_US&gl=US\",\n    \"status\": \"Active\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/employee/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/employee/read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"read"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
