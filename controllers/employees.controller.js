@@ -19,7 +19,7 @@ const saveEmployee = async (req, res, next) => {
         });
         console.log('newUserData', newUserData);
 
-        res.status(200).json(response);
+        res.status(200).json('sucess');
 
     } catch (error) {
         next(error);
