@@ -14,7 +14,7 @@ const saveEmployee = async (req, res, next) => {
         // created_at and modified_at automatically recorded in db with a new db record
         console.log('employee data', empData)
 
-        const newUserData = await db.guest_user.create({
+        const newUserData = await db.employee_details.create({
             empData,
         });
         console.log('newUserData', newUserData);
@@ -28,7 +28,7 @@ const saveEmployee = async (req, res, next) => {
 
 const getEmployees = async (req, res, next) => {
     try {
-        const employees = await db.guest_user.findAll({
+        const employees = await db.employee_details.findAll({
             raw: true,
         });
         console.log('all User Data', employees);
